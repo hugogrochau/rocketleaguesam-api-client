@@ -1,8 +1,13 @@
-import PlayerClient from './player';
+import forge from 'mappersmith';
+import player from './resources/player';
+import formatResponse from './middlewares/format-response';
 
-export default (base) => {
-  const apiClient = {};
-  apiClient.player = new PlayerClient(base);
+export default (host) =>
+  forge({
+    middlewares: [formatResponse],
+    host,
+    resources: {
+      player,
+    },
+  });
 
-  return apiClient;
-};
