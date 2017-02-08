@@ -1,0 +1,15 @@
+export default {
+  all: { path: '/team' },
+  get: { path: '/team/{id}' },
+  mine: { path: '/team/mine' },
+  createMine: { path: '/team/create/mine', method: 'post' },
+  addPlayerMine: { path: '/team/add/player/mine/{playerPlatform}/{playerId}', method: 'post' },
+  setLeaderMine: { path: '/team/set/leader/mine/{playerPlatform}/{playerId}', method: 'post' },
+  removePlayerMine: { path: '/team/remove/player/mine/{playerPlatform}/{playerId}', method: 'post' },
+  removeMine: { path: '/team/remove/mine', method: 'delete' },
+  create: { path: '/team/create', method: 'post' },
+  addPlayer: { path: '/team/add/player/{id}/{playerPlatform}/{playerId}', method: 'post' },
+  setLeader: { path: '/team/set/leader/{id}/{playerPlatform}/{playerId}', method: 'post' },
+  removePlayer: { path: '/team/remove/player/{id}/{playerPlatform}/{playerId}', method: 'post' },
+  remove: { path: '/team/remove/{id}', method: 'delete' },
+};
