@@ -1,8 +1,8 @@
 {
   "name": "rocketleaguesam-api-client",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Rocket League South America API client",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src -s -D -d dist --ignore node_modules",
     "lint": "eslint src test",
