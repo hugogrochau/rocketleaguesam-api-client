@@ -1,14 +1,15 @@
-export default () => ({
+export default (ignoreErrors) => () => ({
   response: (next) =>
     new Promise((resolve, reject) =>
       next()
       // format valid responses
         .then((response) => resolve(formatResponse(response)))
         // format error responses
-        .catch((err) => reject(formatResponse(err)))
+        .catch((err) => ignoreErrors ?
+                          resolve(formatResponse(err)) :
+                          reject(formatResponse(err)))
     ),
 });
-
 
 const formatResponse = (response) => {
   try {
