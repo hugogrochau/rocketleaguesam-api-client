@@ -2,7 +2,7 @@ export default (ignoreErrors) => () => ({
   response: (next) =>
     new Promise((resolve, reject) =>
       next()
-      // format valid responses
+        // format valid responses
         .then((response) => resolve(formatResponse(response)))
         // format error responses
         .catch((err) => ignoreErrors ?
@@ -17,6 +17,7 @@ const formatResponse = (response) => {
     const data = JSON.parse(response.responseData);
     return { ...response, ...data };
   } catch (e) {
+    // if the response is just text
     return response;
   }
 };

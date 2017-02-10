@@ -4,7 +4,7 @@ import team from './resources/team';
 import formatResponse from './middlewares/format-response';
 
 const defaultOptions = {
-  host: 'http://127.0.0.1:80',
+  host: 'http://api.rocketleaguesam.com',
   ignoreErrors: false,
 };
 
