@@ -18,6 +18,6 @@ const formatResponse = (response) => {
     return { ...response, ...data };
   } catch (e) {
     // if the response is just text
-    return response;
+    return { ...response, data: response.responseData };
   }
 };
