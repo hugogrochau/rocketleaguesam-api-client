@@ -6,4 +6,4 @@ Rocket League South America API Client
 [![Dependency Status](https://www.versioneye.com/user/projects/589e01170f3d4f004dcef4be/badge.svg)](https://www.versioneye.com/user/projects/589e01170f3d4f004dcef4be)
 
 ## Authors
-* @hugogrochau
+* [hugogrochau](http://hugo.grochau.com)
