@@ -1,6 +1,7 @@
 import forge from 'mappersmith';
 import player from './resources/player';
 import team from './resources/team';
+import auth from './resources/auth';
 import formatResponse from './middlewares/format-response';
 
 const defaultOptions = {
@@ -17,6 +18,7 @@ export default (options) => {
     resources: {
       player,
       team,
+      auth,
     },
   });
 };
